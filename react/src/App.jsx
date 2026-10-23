@@ -15,14 +15,12 @@ function App() {
   }, [list]);
 
 
-  const handleAdd = () => {
-    if (name.trim() === "") return;
+ 
 
-    setList([...list, name.trim()]);
-    setName("");
+  const handleDelete = (indexToDelete) => {
+    setList(list.filter((_, index) => index !== indexToDelete));
   };
 
-  
   return (
     <div className="div-container">
       <h1>List of Students</h1>
