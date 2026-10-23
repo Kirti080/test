@@ -15,7 +15,12 @@ function App() {
   }, [list]);
 
 
- 
+  const handleAdd = () => {
+    if (name.trim() === "") return;
+
+    setList([...list, name.trim()]);
+    setName("");
+  };
 
   const handleDelete = (indexToDelete) => {
     setList(list.filter((_, index) => index !== indexToDelete));
