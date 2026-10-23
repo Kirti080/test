@@ -22,10 +22,7 @@ function App() {
     setName("");
   };
 
-  const handleDelete = (indexToDelete) => {
-    setList(list.filter((_, index) => index !== indexToDelete));
-  };
-
+  
   return (
     <div className="div-container">
       <h1>List of Students</h1>
