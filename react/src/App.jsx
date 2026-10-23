@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 
-function App() {
+function retry() {
 
   const [name, setName] = useState("");
 
@@ -60,4 +60,4 @@ function App() {
   );
 }
 
-export default App;
+export default retry;
